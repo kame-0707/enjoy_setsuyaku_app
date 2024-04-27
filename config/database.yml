@@ -79,6 +79,6 @@ test:
 #
 production:
   <<: *default
-  database: enjoy_setsuyaku_app_production
-  username: enjoy_setsuyaku_app
+  database: enjoy_setsuyaku_app_db
+  username: enjoy_setsuyaku_app_db_user
   password: <%= ENV["ENJOY_SETSUYAKU_APP_DATABASE_PASSWORD"] %>

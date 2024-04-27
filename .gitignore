@@ -39,3 +39,5 @@
 
 .DS_Store
 /vendor/bundlerender-build.sh
+
+/node_modules

@@ -1,4 +1,18 @@
-<div>
-  <h1 class="font-bold text-4xl">Joys#top</h1>
-  <p>Find me in app/views/joys/top.html.erb</p>
+<div class="w-5/6 mx-auto max-w-screen-xl my-5">
+  <div class="flex h-96 justify-center items-center">
+    <%= image_tag 'setsuyaku.png', width: '500', height: '500' %>
+  </div>
+  <div class="flex text-center justify-center">
+    目標があるからこそ<br>
+    節約したい時がある<br>
+    お金を使わずに気分転換！<br>
+    今日は何をする？<br>
+  </div>
+  <br>
+  <br>
+  <div class="flex text-center justify-center">
+    <%= link_to joy_path(@joy) do %>
+    <button class="btn btn-success">今日の気分転換はこちら</button>
+    <% end %>
+  </div>
 </div>

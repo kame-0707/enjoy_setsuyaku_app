@@ -1,9 +1,13 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+joys = [
+  {name: '花を観察しながら散歩する', joy_image: 'hana_sanpo'},
+  {name: 'ストレッチをする', joy_image: 'stretch'},
+  {name: 'ゆっくりコーヒーを淹れる', joy_image: 'coffee'},
+  {name: '思っていることを文字に書き起こす', joy_image: 'journaling'},
+  {name: '空を眺めて深呼吸する', joy_image: 'breath'},
+]
+
+
+#要素をdbに追加
+joys.each do |joy|
+  Joy.create!(joy)
+end
