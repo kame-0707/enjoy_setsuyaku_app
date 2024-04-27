@@ -1,10 +1,10 @@
-<div class="w-5/6 mx-auto max-w-screen-xl my-5">
-  <div class="flex h-64 justify-center items-center">
+<div class="w-5/6 mx-auto max-w-screen-xl my-0">
+  <div class="flex h-10 justify-center items-center mt-4">
     <%= image_tag 'kibuntenkan.png', width: '400', height: '400' %>
   </div>
-  <div class="flex h-30 justify-center items-center gap-4"> 
+  <div class="flex h-30 justify-center items-center mt-10"> 
     <% if @joy.present? %>
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center mt-0">
         <div><%= @joy.name %></div>
         <div class="mt-4"><%= image_tag "#{@joy.joy_image}.png", width: '400', height: '400'%></div>
       </div>
@@ -12,7 +12,7 @@
       <div>情報が見つかりません<div>
     <% end %>
   </div>
-  <div class="flex h-30 justify-center items-center gap-4">
+  <div class="flex h-30 justify-center items-center gap-4 mt-2">
     <% if @joy.present? %>
       <%= link_to "https://twitter.com/share?url=#{joy_url(@joy)}&text=【エンジョイ節約】%0a%0a今日の気分転換は「#{@joy.name}」", target: '_blank', data: { toggle: "tooltip", placement: "bottom" }, title: "Xでシェア" do %>
         <div class="mt-4"><button class=" btn btn-error">Xでシェア</button></div>
