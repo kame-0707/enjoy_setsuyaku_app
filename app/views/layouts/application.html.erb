@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html data-theme="lemonade">
   <head>
+    <!-- Twitter リンクカード -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta property="og:url" content="https://enjoy-setsuyaku-app.onrender.com/" />
+    <meta property="og:title" content="エンジョイ節約" />
+    <meta property="og:description" content="節約中でもできる気分転換を探そう。" />
+    <meta property="og:image" content="<%= image_url "top_image.png" %>" />
+    <!-- Twitter リンクカードここまで -->
     <title>EnjoySetsuyakuApp</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- Twitter リンクカード -->
-    <% if Rails.env.production? %>
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="" />
-      <meta property="og:url" content="https://enjoy-setsuyaku-app.onrender.com/" />
-      <meta property="og:title" content="エンジョイ節約" />
-      <meta property="og:description" content="節約中でもできる気分転換を探そう。" />
-      <meta property="og:image" content="https://i.gyazo.com/124e6eaff57b183cfa055f96da627dd4.png" />
-    <% end %>
-    <!-- Twitter リンクカードここまで -->
-
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
