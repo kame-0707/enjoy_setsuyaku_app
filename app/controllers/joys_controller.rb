@@ -1,6 +1,6 @@
 class JoysController < ApplicationController
 
-  def top
+  def index
     @joy = Joy.all
   end
 
