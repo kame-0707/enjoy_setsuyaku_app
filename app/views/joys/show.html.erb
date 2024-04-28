@@ -15,7 +15,7 @@
   </div>
   <div class="flex h-30 justify-center items-center gap-4 mt-2">
     <% if @joy.present? %>
-      <%= link_to "https://twitter.com/intent/tweet?text=【エンジョイ節約】%0a%0a今日の気分転換は「#{@joy.name}」&url=https://enjoy-setsuyaku-app.onrender.com/" do %>
+      <%= link_to "https://twitter.com/intent/tweet?text=【エンジョイ節約】%0a今日の気分転換は「#{@joy.name}」%0a%23エンジョイ節約 %23ミニアプリweek%0a%0a&url=https://enjoy-setsuyaku-app.onrender.com/" do %>
         <div class="mt-4"><button class=" btn btn-error">Xでシェア</button></div>
       <% end %>
     <% end %>
