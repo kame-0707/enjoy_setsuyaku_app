@@ -5,6 +5,11 @@ module.exports = {
     './app/assets/stylesheets/**/*.css',
     './app/javascript/**/*.js'
   ],
+  theme: {
+    fontFamily: {
+      kurenaido: ["Zen Kurenaido"],
+    },
+  },
   plugins: [require("daisyui")],
   daisyui: { 
     themes: [
