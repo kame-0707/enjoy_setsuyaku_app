@@ -15,7 +15,7 @@
   </div>
   <div class="flex h-30 justify-center items-center gap-4 mt-2">
     <% if @joy.present? %>
-      <%= link_to "https://twitter.com/share?url=#{request.url}&text=【エンジョイ節約】%0a%0a今日の気分転換は「#{@joy.name}」", target: '_blank', data: { toggle: "tooltip", placement: "bottom" }, title: "Xでシェア" do %>
+      <%= link_to "https://twitter.com/share?url=#{joy_url(@joy)}&text=【エンジョイ節約】%0a%0a今日の気分転換は「#{@joy.name}」", target: '_blank', data: { toggle: "tooltip", placement: "bottom" }, title: "Xでシェア" do %>
         <div class="mt-4"><button class=" btn btn-error">Xでシェア</button></div>
       <% end %>
     <% end %>
