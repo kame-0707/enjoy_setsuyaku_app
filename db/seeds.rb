@@ -9,7 +9,7 @@ joys = [
   {name: '遊びに行ってみたいところを調べる', joy_image: 'think'},
   {name: '肩を回してこりをほぐす', joy_image: 'katamawashi'},
   {name: '本屋や図書館に行く', joy_image: 'books'},
-  {name: '15分昼寝をする', joy_image: 'images'},
+  {name: '15分昼寝をする', joy_image: 'images'}
 ]
 
 
