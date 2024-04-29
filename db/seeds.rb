@@ -13,6 +13,7 @@ joys = [
 ]
 
 
+
 #要素をdbに追加
 joys.each do |joy|
   Joy.create!(joy)
