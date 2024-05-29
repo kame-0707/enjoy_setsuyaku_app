@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :joys
   root 'joys#index'
+  get 'show', to: 'joys#show'
 end

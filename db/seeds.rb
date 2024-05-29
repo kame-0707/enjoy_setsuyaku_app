@@ -1,3 +1,5 @@
+  # db無料期間終了に伴い、sampleメソッドを使用した方法に書き換え
+  # 上記に伴い、下記のdbデータは現状未使用
 joys = [
   {name: '花を観察しながら散歩する', joy_image: 'hana_sanpo'},
   {name: 'ストレッチをする', joy_image: 'stretch'},
