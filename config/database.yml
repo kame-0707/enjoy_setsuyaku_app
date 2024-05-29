@@ -77,8 +77,10 @@ test:
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
-production:
-  <<: *default
-  database: enjoy_setsuyaku_app_db
-  username: enjoy_setsuyaku_app_db_user
-  password: <%= ENV["ENJOY_SETSUYAKU_APP_DATABASE_PASSWORD"] %>
+# db無料期間終了に伴い、sampleメソッドを使用した方法に書き換え
+# 上記に伴い、本番環境のdbは現状未使用
+# production:
+#   <<: *default
+#   database: enjoy_setsuyaku_app_db
+#   username: enjoy_setsuyaku_app_db_user
+#   password: <%= ENV["ENJOY_SETSUYAKU_APP_DATABASE_PASSWORD"] %>
